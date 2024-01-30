@@ -1,0 +1,12 @@
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    border-radius: 4%;
+}
+
+.div1{
+    text-align: center;
+}
