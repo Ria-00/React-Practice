@@ -6,6 +6,7 @@ import List from './Components/List';
 import Button from './Components/Button';
 import NewComponent from './Components/NewComponent';
 import ColorPicker from './Components/ColorPicker';
+import NewComponent1 from './Components/NewComponent1';
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
      {/* <Button name='pikachu'></Button>  */}
      <br /><br />
      {/* <NewComponent></NewComponent> */}
-     <ColorPicker></ColorPicker>
+     {/* <ColorPicker></ColorPicker> */}
+     <NewComponent1></NewComponent1>
      
     </>
   );
