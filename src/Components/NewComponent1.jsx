@@ -13,6 +13,17 @@ function NewComponent1(){
     const changeYear=(e)=>{
         setCar({...car,year:e.target.value});
     }
+    const addFood=()=>{
+        const f=document.getElementById('foo').value;
+        document.getElementById('foo').value=''   ;
+        // F=F.push(f)
+        // console.log(foods);
+        setFood(F=>[...F,f]);
+    }
+    const removeFood=(index)=>{
+        foods.splice(index,1);
+        setFood([...foods]);
+    }
     return(
         <>
             <div style={{textAlign:"center"}}>
@@ -25,10 +36,10 @@ function NewComponent1(){
             <div>
                 <h1> FOOD ITEMS</h1>
                 <ul>
-                {foods.map((food,index)=><li>
-                    {food}
-                </li>)}
+                {foods.map((food,index)=><li key={index} onClick={()=>removeFood(index)}>{food}</li>)}
                 </ul>
+                &nbsp; <input type="text" placeholder="new food" id="foo"/>&nbsp;
+                <button onClick={addFood}>Add</button>
                
             </div>
         </>
