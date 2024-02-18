@@ -7,6 +7,7 @@ import Button from './Components/Button';
 import NewComponent from './Components/NewComponent';
 import ColorPicker from './Components/ColorPicker';
 import NewComponent1 from './Components/NewComponent1';
+import Sizer from './Components/Sizer';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
      <br /><br />
      {/* <NewComponent></NewComponent> */}
      {/* <ColorPicker></ColorPicker> */}
-     <NewComponent1></NewComponent1>
+     {/* <NewComponent1></NewComponent1> */}
+     <Sizer></Sizer>
      
     </>
   );
